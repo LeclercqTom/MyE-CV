@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html>
+  	<head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+      <title>LECLERCQ Tom</title>
+      <link href="style.css" rel="stylesheet" type="text/css" />
+      <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"> -->
+	  <script src="https://kit.fontawesome.com/01b6b432e0.js" crossorigin="anonymous"></script>
+      <link rel="icon" href="img/icone.jpg">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="script.js"></script>
+	</head>
+	<body>
+	  
+        <div class="container">
+	  
+<!-- ---------------- Header ---------------- -->
+		<header>
+			<a class="logo" href="#home">
+              	<img src="img/logo.png" alt="Logo Tom" />
+			</a>
+			<nav>	
+				<ul class="nav-bar"><div class="bg"></div>
+					<li><a class="nav-link active" href="#home">Home</a></li>
+					<li><a class="nav-link" href="#formation">Formation</a></li>
+					<li><a class="nav-link" href="#expepro">Expérience professionnelle</a></li>
+					<li><a class="nav-link" href="#projects">Projets</a></li>
+					<li><a class="nav-link" href="#competences">Compétences</a></li>
+					<li><a class="nav-link" href="#cv">Documents</a></li>
+					<li><a class="nav-link" href="#centreint">Centres d'intérêt</a></li>
+					<li><a class="nav-link" href="#contact">Contact</a></li>
+				</ul>
+			
+				<div class="hamburger">
+					<div class="line1"></div>
+				<div class="line2"></div>
+					<div class="line3"></div>
+				</div>
+			</nav>
+		</header>
+	<main>
+
+
+<!-- ---------------- Accueil ---------------- -->
+		<div id="home">
+			<div class="filter"></div>
+			<section class="intro">
+				<a class="pdp" ><img src="img/pdp2.jpg"/></a>
+				<p></br> </p>
+				<h3><hr>Tom LECLERCQ<hr></h3>
+				<h3>20 ans</h3>
+				<p>Actuellement étudiant en 3ème année de BUT informatique en alternance.</p>
+				<p>Je suis à la recherche d'une entreprise afin de poursuivre</p>
+				<p>l'alternance en école d'ingénieur. </p>
+				<div id="autre"> 
+					<div class="social-media">
+						<a href="https://github.com/LeclercqTom" target="_blank"><i class='fab fa-github'></i></a>
+						<a href="https://www.linkedin.com/in/leclercq-tom/" target="_blank"><i class='fab fa-linkedin-in'></i></a>
+						<a href="https://www.instagram.com/tom_leclercq22/" target="_blank"><i class='fab fa-instagram'></i></a>
+						<a href="https://discord.com/invite/273134268593602572" target="_blank"><i class='fab fa-discord'></i></a>
+					</div>
+				</div>  
+		</div>
+			</section>
+<!-- ---------------- Ma Formation ---------------- -->
+		<div id="formation">
+			<h3>Ma formation<hr></h3>
+			<p>2021 - 2024 IUT du Littoral Côte D'opale Calais</p>
+			<p>BUT Informatique parcours déploiement d'applications communicantes et sécurisées en alternance</p>
+			<hr>
+			<p>2018 - 2021 Lycée Edouard Branly Boulogne-sur-Mer</p>
+			<p>Baccalauréat général Spécialités Physique / Mathématiques / Numérique Science Informatique Mention Bien  </p>
+		</div>
+
+<!-- ---------------- Mon expérience professionnelle ---------------- -->
+<div id="expepro">
+    <h3>Mon expérience professionnelle<hr></h3>
+    <p class="info-principale">2022 - 2024 - Alternant technicien informatique - Channel Poids Lourds, Marck 62730</p>
+    <hr>
+    <h4>Mes missions</h4>
+    <div id="mymissions">
+        <p class="info-principale">
+			<i class="fas fa-circle point"></i>
+            Support et assistance technique des utilisateurs
+            <a onclick="toggleDetails('support_details', this)"><i class="fas fa-angle-down logo-menu"></i></a>
+        </p>
+        <div class="info-missions" id="support_details" style="display: none;">
+            <p>En tant que responsable de l'assistance technique au sein de l'entreprise, ma mission principale consiste à fournir un soutien rapide et efficace aux 135 collaborateurs répartis sur plusieurs sites. 
+				Mon objectif est de minimiser les interruptions et d'assurer un environnement de travail fluide pour mes collègues.
+				Je résous divers problèmes logiciels, tels que la suppression accidentelle de raccourcis sur le bureau ou la corruption de fichiers.
+				J'utilise TeamViewer pour accéder à distance aux appareils et résoudre les problèmes souvent rapidement résolus après des recherches.
+				De plus, j'installe des certificats sur des logiciels spécifiques</p>
+        </div>
+        <p class="info-principale">
+			<i class="fas fa-circle point"></i>
+            Déploiement et administration d'un système de Gestion Electronique des Documents
+            <a onclick="toggleDetails('ged_details', this)"><i class="fas fa-angle-down logo-menu"></i></a>
+        </p>
+        <div class="info-missions" id="ged_details" style="display: none;">
+				<p>Contexte :<br>
+					Suite à une loi exigeant la dématérialisation des factures, initialement prévue pour 2024 mais repoussée à 2026, notre entreprise a entrepris de mettre 
+					en place un système de gestion électronique des documents. Cette décision a été motivée non seulement par le besoin de se conformer à la réglementation, 
+					mais aussi par la volonté de moderniser nos processus internes et d'introduire des automatisations pour améliorer notre efficacité opérationnelle.
+				</p>
+				<p>
+					Objectifs :<br>
+					L'objectif principal de ce projet était de mettre en place un système de gestion électronique des documents permettant la dématérialisation et 
+					la gestion efficace des factures. En optant pour cette solution, nous cherchions à simplifier et à rationaliser nos processus de facturation, 
+					tout en garantissant la conformité aux exigences légales. Nous visons également à moderniser nos pratiques en adoptant des technologies numériques 
+					et à introduire des automatisations pour accélérer nos flux de travail.
+				<p> 
+					J’ai collaboré avec mon maître d'apprentissage et un prestataire pour choisir la solution la plus adaptée à nos besoins. La solution pour laquelle 
+					nous avons opté est Zeendoc, un logiciel en tant que service (SaaS) offrant des fonctionnalités complètes de gestion électronique des documents. 
+					La mise en place du projet a impliqué la définition d'un workflow de facturation, la configuration du logiciel selon nos besoins spécifiques, 
+					et la formation de nos collaborateurs à son utilisation. Des réunions régulières ont été organisées pour discuter des progrès du projet, 
+					proposer des solutions aux problèmes rencontrés et recueillir les retours des utilisateurs.
+				</p>
+				<p>
+					Mon expérience sur ce projet a été extrêmement positive et enrichissante. J'ai pu développer mes compétences en gestion de projet et en travail 
+					d'équipe tout en contribuant à la modernisation de nos pratiques. Bien que le processus d'adoption de la gestion électronique des documents nécessite
+					encore du temps pour être pleinement intégré par nos collaborateurs, je suis fier de mon rôle dans ce projet. La maintenance continue du système 
+					me permet de rester engagé dans son amélioration et d'assurer sa pertinence pour notre entreprise.
+				</p>
+        </div>
+        <p class="info-principale">
+			<i class="fas fa-circle point"></i>
+            Mise en œuvre d'une solution de signature électronique
+            <a onclick="toggleDetails('signature_details', this)"><i class="fas fa-angle-down logo-menu"></i></a>
+        </p>
+        <div class="info-missions" id="signature_details" style="display: none;">
+			<p>Contexte :<br>
+				Dans le cadre de nos activités de location de camions et de semi-remorques, nous avons identifié un défi majeur : la complexité des signatures de contrat. 
+				En effet, les chauffeurs sont souvent les personnes chargées de récupérer les véhicules loués, mais ils ne sont pas les signataires des contrats. 
+				Cela entraîne des retards et des inefficacités, nécessitant parfois l'envoi des contrats par courrier après la prise du véhicule.
+			</p>
+			<p>
+				Objectifs :<br>
+				L'objectif principal de cette mission était de simplifier et d'optimiser le processus de signature des contrats de location de camions et de semi-remorques. 
+				Le but était de trouver une solution efficace permettant aux signataires appropriés de valider les contrats avant la prise en charge des véhicules par les 
+				chauffeurs. J'ai recherché une plateforme qui correspondait à nos critères spécifiques et offrait une interface simple pour faciliter l'usage quotidien de 
+				mes collaborateurs.
+			</p>
+			<p> 
+				Pour commencer, j'ai effectué une veille approfondie pour identifier les options disponibles sur le marché. Suite à des recommandations, 
+				j'ai découvert la plateforme DocuSign, qui semblait répondre parfaitement à nos besoins. Ensuite, j'ai pris en charge la mise en œuvre de cette solution 
+				de manière autonome. J'ai créé numériquement tous les contrats, en délimitant soigneusement les zones de signatures et de paraphes nécessaires.<br>
+
+				J'ai également mis en place un workflow spécifique pour garantir que les contrats soient signés dans un ordre précis. Ainsi, un représentant de chez 
+				Channel Poids Lourds doit signer le contrat avant que le locataire puisse le valider en retour. Pour paramétrer l'application et optimiser le workflow, 
+				j'ai organisé plusieurs réunions avec une collaboratrice de chez DocuSign. Ses conseils m'ont permis d'améliorer certains aspects et de trouver le 
+				paramétrage optimal pour notre entreprise.
+			</p>
+			<p>
+				Cette mission a été une expérience enrichissante et stimulante. La réalisation de ce projet de manière autonome m'a permis d'acquérir des compétences 
+				en recherche, en gestion de projet, ainsi qu'en communication avec mes collaborateurs pour identifier et mettre en œuvre des améliorations. 
+			</p>
+        </div>
+        <p class="info-principale">
+			<i class="fas fa-circle point"></i>
+            Conception et déploiement d'une infrastructure réseau pour les 9 sites du groupe
+            <a onclick="toggleDetails('infra_details', this)"><i class="fas fa-angle-down logo-menu"></i></a>
+        </p>
+        <div class="info-missions" id="infra_details" style="display: none;">
+            <p>Contexte :<br>
+				Suite à la publication d'une norme européenne en juin 2023 concernant les règles de sécurité pour les nouveaux camions, notre concessionnaire SCANIA a dû se conformer à ces nouvelles exigences. 
+				Cela impliquait la mise en place de mesures de sécurité renforcées, notamment avec l'introduction de la WCU (Unité de Contrôle du Service) 
+				pour sécuriser les diagnostics sur les camions et éviter les accès non autorisés.
+			</p>
+			<p>
+				Objectifs :<br>
+				Mettre en place une infrastructure réseau capable de supporter la WCU et de répondre aux exigences de sécurité de SCANIA.<br>
+				Créer un environnement sécurisé avec deux VLAN distincts (X client et Y serveur) dans une DMZ firewall pour garantir l'isolation entre les clients et les services.<br>
+				Harmoniser l'infrastructure réseau sur tous les sites pour assurer une cohérence et faciliter les évolutions futures.<br>
+			</p>
+			<p> 
+				Mon maître d’apprentissage et moi même avons collaboré avec un prestataire afin d’identifier les problèmes et les besoins en termes d’architecture. 
+				Ensemble nous avons conçu une nouvelle architecture réseau prenant en compte les exigences de sécurité de SCANIA, l’harmonisation de la configuration entre les neufs 
+				sites et les futurs projets. Nous avons décidé de nous équiper d’un firewall Palo-Alto Pa-440 et d’un switch Aruba (HPE 5140 48G 4SFP). <br>
+
+				En novembre et décembre 2023, nous nous sommes déplacés sur l’ensemble des sites afin d’implémenter chaque nouvelle architecture. Les switchs et les firewall étaient
+				préalablement configuré, nécessitant simplement de remplacer le matériel et d’ajouter des éléments spécifiques dans la configuration qui n’étaient pas présents sur
+				tous les sites. <br>
+				
+				A ce jour, le déploiement de la nouvelle architecture est terminé et nous envisageons de remplacer notre routeur MPLS coeur de réseau par une solution de tunnel VPN.
+			</p>
+			<p>
+				Mon retour d’expérience sur ce projet a été extrêmement enrichissant. La mise en place d'une nouvelle architecture réseau m'a permis de mettre en pratique 
+				mes connaissances et de développer de nouvelles compétences. J'ai réalisé que remplacer une architecture existante peut être complexe et qu'il est fréquent 
+				de rencontrer des obstacles en cours de route. Cependant, ces défis ont été les moments les plus instructifs, car j'ai appris énormément en les surmontant. <br>
+
+				Travailler avec le prestataire a également été très bénéfique. Son expertise m'a été précieuse et m'a permis d'acquérir de nouvelles compétences que je 
+				pourrai mettre en pratique dans d’autres projets. En fin de compte, ce projet m'a permis de développer ma capacité à résoudre des problèmes complexes et à 
+				collaborer efficacement avec des partenaires externes pour atteindre nos objectifs communs. <br>
+			</p>
+        </div>
+        <p class="info-principale">
+			<i class="fas fa-circle point"></i>
+            Conception de graphiques permettant de visualiser les variations des connexions
+            <a onclick="toggleDetails('graph_details', this)"><i class="fas fa-angle-down logo-menu"></i></a>
+        </p>
+        <div class="info-missions" id="graph_details" style="display: none;">
+            <p>Détails sur la conception de graphiques pour visualiser les variations des connexions...</p>
+        </div>
+    </div>
+	<h4>Projet à venir </h4>
+	<div id="projetfutur">
+		<p class="info-principale">
+			<i class="fas fa-circle point"></i>
+            Déploiement et gestion de tablettes pour le diagnostic des camions
+            <a onclick="toggleDetails('mdm_details', this)"><i class="fas fa-angle-down logo-menu"></i></a>
+        </p>
+        <div class="info-missions" id="mdm_details" style="display: none;">
+            <p>Détails sur la conception de graphiques pour visualiser les variations des connexions...</p>
+        </div>
+	</div>
+</div>
+
+<script>
+    function toggleDetails(id, arrowIcon) {
+		var details = document.getElementById(id);
+		var icon = arrowIcon.querySelector('i');
+	
+		if (details.style.display === "none") {
+			details.style.display = "block";
+			icon.className = "fas fa-angle-up logo-menu"; // Change l'icône de la flèche vers le haut
+		} else {
+			details.style.display = "none";
+			icon.className = "fas fa-angle-down logo-menu"; // Change l'icône de la flèche vers le bas
+		}
+	}
+	
+</script>
+
+
+<!-- ---------------- Mes projets ---------------- -->
+		<div id="projects"> 
+			<h3>Projets.<hr></h3>
+			<p>Projets réalisés en cours et durant mon temps libre.</p>
+			<div class="work-box">
+				<div class="work" id="projects-container"> <!-- Ajoutez un ID pour le conteneur des cards -->
+					<!-- Vos cards existantes -->
+					<div class="card">
+						<a href="#socket" >
+						<img class="work-img" src="img/bataille.jpg">
+						
+							<div class="work-content">SAE Sockets<br> Codée en Python</div>
+						</a>
+					</div>
+					<div class="card">
+						<a href="#test2" >
+						<img class="work-img" src="img/bataille.jpg">
+						
+							<div class="work-content">SAE OpenStack<br> Codée en Python</div>
+						</a>
+					</div>
+					<div class="card">
+						<a href="" target="_blank">
+						<img class="work-img" src="img/bataille.jpg">
+						
+							<div class="work-content">SAE PowerShell<br> Codée en Python</div>
+						</a>
+					</div>
+					<div class="card">
+						<a href="" target="_blank">
+						<img class="work-img" src="img/bataille.jpg">
+						
+							<div class="work-content">SAE Cybersécurité<br> Codée en Python</div>
+						</a>
+					</div>
+					<div class="card hidden">
+						<a href="" target="_blank">
+						<img class="work-img" src="img/bataille.jpg">
+						
+							<div class="work-content">Projet myMoviesDB<br> Codée en Python</div>
+						</a>
+					</div>
+					<div class="card hidden">
+						<a href="" target="_blank">
+						<img class="work-img" src="img/bataille.jpg">
+						
+							<div class="work-content">Pokedex<br> Codée en Python</div>
+						</a>
+					</div>
+					<div class="card hidden">
+						<img class="work-img" src="https://images.unsplash.com/photo-1517842645767-c639042777db?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80">
+						<a href="" target="_blank"> <!--Link to project-->
+						<div class="work-content">Lorem ipsum dolor sit amet consectetur.</div></a>
+					</div> 
+					<div class="card hidden">
+						<img class="work-img" src="https://images.unsplash.com/photo-1535556116002-6281ff3e9f36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=781&q=80">
+						<a href="" target="_blank"> <!--Link to project-->
+						<div class="work-content">Lorem ipsum dolor sit amet consectetur.</div></a>
+					</div>
+					<!-- Ajoutez d'autres cards ici -->
+				</div>
+				<!-- Bouton "Voir plus" -->
+				<button id="voir-plus-btn">Voir plus</button>
+			</div>
+		</div>
+		<div class="info-projet">
+		<section id="socket" style="display:none;">
+			<h3><hr> SAÉ Sockets <hr></h3>
+			<!-- Ajoutez votre contenu de CV ici -->
+			<a href="cv.pdf" download>Télécharger le CV en PDF</a>
+			<button id="close-btn">Fermer</button>
+		</section>
+		</div>
+
+		<section id="test2" style="display:none;">
+			<!-- Ajoutez votre contenu de CV ici -->
+			<a href="cv.pdf" download>Télécharger </a>
+		</section>
+<!-- Bouton pour fermer -->
+<script>
+	document.addEventListener("DOMContentLoaded", function() {
+		// Sélectionne le bouton de fermeture
+		const closeButton = document.getElementById('close-btn');
+	
+		// Ajoute un écouteur d'événements au clic sur le bouton de fermeture
+		closeButton.addEventListener('click', function() {
+			// Cache la section correspondante
+			const section = document.getElementById('socket');
+			section.style.display = 'none';
+		});
+	});
+	
+</script>
+
+<!-- Faire disparaitre la section du projet lorsque je clique sur une card -->
+<script>
+	document.addEventListener("DOMContentLoaded", function() {
+		// Sélectionne toutes les cartes
+		const cards = document.querySelectorAll('.card');
+	
+		// Boucle à travers chaque carte
+		cards.forEach(function(card) {
+			// Ajoute un écouteur d'événements au clic sur chaque carte
+			card.addEventListener('click', function(event) {
+				// Empêche la propagation de l'événement de clic vers les éléments parents
+				event.stopPropagation();
+	
+				// Récupère l'ID de la section correspondante à partir du lien de la carte
+				const sectionId = this.querySelector('a').getAttribute('href').substring(1);
+				
+				// Sélectionne la section correspondante
+				const section = document.getElementById(sectionId);
+				
+				// Vérifie si la section est déjà visible
+				if (section.style.display === 'block') {
+					// Si c'est le cas, la cache
+					section.style.display = 'none';
+				} else {
+					// Sinon, affiche-la et cache les autres sections
+					const sections = document.querySelectorAll('section:not(.intro)');
+					sections.forEach(function(sec) {
+						sec.style.display = 'none';
+					});
+					section.style.display = 'block';
+				}
+			});
+		});
+	});
+</script>
+<script>
+	// JavaScript pour gérer le clic sur le bouton "Voir plus"
+	var isHidden = true; // Variable pour suivre l'état actuel (caché ou non)
+	var additionalCards = document.querySelectorAll('.card.hidden'); // Sélectionnez les cartes supplémentaires initialement cachées
+	
+	document.getElementById('voir-plus-btn').addEventListener('click', function() {
+		// Si les cartes sont actuellement cachées, les afficher
+		if (isHidden) {
+			additionalCards.forEach(function(card) {
+				card.classList.remove('hidden');
+			});
+			this.textContent = 'Voir moins'; // Modifier le texte du bouton
+		} else { // Sinon, les cacher à nouveau
+			additionalCards.forEach(function(card) {
+				card.classList.add('hidden');
+			});
+			this.textContent = 'Voir plus'; // Modifier le texte du bouton
+		}
+		// Inverser l'état actuel
+		isHidden = !isHidden;
+	});
+</script>
+
+<!-- ---------------- Mes compétences ---------------- -->
+    <div id="competences">
+		<h3>Compétences.<hr></h3>
+		<div id="bars-container">
+			<div class="progress-bar blue"></div>
+			<div class="progress-bar orange alt"></div>
+			<div class="progress-bar green"></div>
+			<div class="progress-bar pink alt"></div>
+			<div class="clear"></div>
+		</div>
+
+	</div>
+
+	<!-- ---------------- Mes centres d'intérêt ---------------- -->
+	<div id="centreint"> 
+		<h3>Mes centres d'intérêts<hr></h3>
+		 <p>Projets réalisés en cours et durant mon temps libre.</p>
+		 <div class="work-box">
+		 <div class="work">
+	   <!--───────────────card───────────────-->
+		   <div class="card">
+			   <img class="work-img" src="img/bataille.jpg">
+			   <a href="" target="_blank"> <!--Link to project-->
+			   <div class="work-content">L'automobile </div></a>
+		   </div>
+		   <div class="card">
+			   <img class="work-img" src="https://images.unsplash.com/photo-1517842645767-c639042777db?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80">
+			   <a href="" target="_blank"> <!--Link to project-->
+			   <div class="work-content">Nouvelles technologies</div></a>
+		   </div> 
+		   <div class="card">
+			   <img class="work-img" src="https://images.unsplash.com/photo-1535556116002-6281ff3e9f36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=781&q=80">
+			   <a href="" target="_blank"> <!--Link to project-->
+			   <div class="work-content">Cinématographie</div></a>
+		   </div>
+		   <div class="card">
+			   <img class="work-img" src="https://images.unsplash.com/photo-1483546416237-76fd26bbcdd1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80">
+			   <a href="" target="_blank"> <!--Link to project-->
+			   <div class="work-content">L'horlogerie</div></a>
+		   </div> 	  
+		 </div>
+		 </div>
+	 </div>
+	 
+      
+      <!--───────────────Liens téléchargeables.───────────────-->
+	  <div id="cv"> 
+        <h3>CV.<hr></h3>
+         <p>Ici vous pouvez retrouver mon CV et quelques PDF utiles.</p>
+         <div class="work-box">
+         <div class="work">
+       <!--───────────────card───────────────-->
+           
+           <div class="card">
+			<a href="img/CV_LECLERCQ_TOM.pdf" download="CV_LECLERCQ_TOM.pdf">
+               <img class="work-img" src="img/CV.png">
+               <div class="work-content">CV VERSION 3.01</div></a>
+           </div>
+           <div class="card">
+               <img class="work-img" src="https://images.unsplash.com/photo-1483546416237-76fd26bbcdd1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80">
+               <a href="" target="_blank"> <!--Link to project-->
+               <div class="work-content">Mes motivations.</div></a>
+           </div> 	  
+           <div class="card">
+            <img class="work-img" src="img/bataille.jpg">
+            <a href="" target="_blank"> <!--Link to project-->
+            <div class="work-content">Flyer.</div></a>
+        </div> 	  
+         </div>
+         </div>
+     </div>
+		 
+		<!--──────────────Contact────────────────-->
+	  <div id="contact">
+		  <!--────social media links─────-->
+		   <h3>Contact.<hr></h3>
+		   <p>N'hésitez pas à me contacter directement sur mes réseaux sociaux!</p>
+		    <div class="social-media">
+                <a href="#" target="_blank"><i class='fab fa-instagram'></i></a>
+                <a href="#" target="_blank"><i class='fab fa-twitter'></i></a>
+                <a href="#" target="_blank"><i class='fab fa-facebook'></i></a>
+                <a href="#" target="_blank"><i class='fab fa-linkedin-in'></i></a>
+		    </div>
+		  </div>
+		</div>	
+	</main>
+	  <footer class="copyright">© 2024 
+		  <a> Tom L.</a>
+     </footer>
+	  
+  </div>
+  </body>
+</html>

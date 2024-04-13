@@ -22,12 +22,12 @@
 			</a>
 			<nav>	
 				<ul class="nav-bar"><div class="bg"></div>
-					<li><a class="nav-link active" href="#home">Home</a></li>
+					<!-- <li><a class="nav-link active" href="#home">Home</a></li> -->
 					<li><a class="nav-link" href="#formation">Formation</a></li>
 					<li><a class="nav-link" href="#expepro">Expérience professionnelle</a></li>
 					<li><a class="nav-link" href="#projects">Projets</a></li>
 					<li><a class="nav-link" href="#competences">Compétences</a></li>
-					<li><a class="nav-link" href="#cv">Documents</a></li>
+					<li><a class="nav-link" href="#cv">Mon CV</a></li>
 					<li><a class="nav-link" href="#centreint">Centres d'intérêt</a></li>
 					<li><a class="nav-link" href="#contact">Contact</a></li>
 				</ul>
@@ -57,21 +57,33 @@
 					<div class="social-media">
 						<a href="https://github.com/LeclercqTom" target="_blank"><i class='fab fa-github'></i></a>
 						<a href="https://www.linkedin.com/in/leclercq-tom/" target="_blank"><i class='fab fa-linkedin-in'></i></a>
-						<a href="https://www.instagram.com/tom_leclercq22/" target="_blank"><i class='fab fa-instagram'></i></a>
-						<a href="https://discord.com/invite/273134268593602572" target="_blank"><i class='fab fa-discord'></i></a>
+						<!-- <a href="https://www.instagram.com/tom_leclercq22/" target="_blank"><i class='fab fa-instagram'></i></a>
+						<a href="https://discord.com/invite/273134268593602572" target="_blank"><i class='fab fa-discord'></i></a> -->
 					</div>
 				</div>  
 		</div>
 			</section>
 <!-- ---------------- Ma Formation ---------------- -->
-		<div id="formation">
-			<h3>Ma formation<hr></h3>
-			<p>2021 - 2024 IUT du Littoral Côte D'opale Calais</p>
-			<p>BUT Informatique parcours déploiement d'applications communicantes et sécurisées en alternance</p>
-			<hr>
-			<p>2018 - 2021 Lycée Edouard Branly Boulogne-sur-Mer</p>
-			<p>Baccalauréat général Spécialités Physique / Mathématiques / Numérique Science Informatique Mention Bien  </p>
-		</div>
+<div id="formation">
+	<h3>Ma formation</h3>
+	<div class="formation-item">
+	  <img src="img/iut.jpg" alt="Image 1">
+	  <div class="formation-content">
+		<h4>2021 - 2024</h4>
+		<p>IUT du Littoral Côte D'opale Calais</p>
+		<p>BUT Informatique parcours déploiement d'applications communicantes et sécurisées en alternance</p>
+	  </div>
+	</div>
+	<div class="formation-item">
+	  <img src="img/branly.png" alt="Image 2">
+	  <div class="formation-content">
+		<h4>2018 - 2021</h4>
+		<p>Lycée Edouard Branly Boulogne-sur-Mer</p>
+		<p>Baccalauréat général Spécialités Physique / Mathématiques / Numérique Science Informatique Mention Bien</p>
+	  </div>
+	</div>
+  </div>
+  
 
 <!-- ---------------- Mon expérience professionnelle ---------------- -->
 <div id="expepro">
@@ -200,20 +212,16 @@
             <a onclick="toggleDetails('graph_details', this)"><i class="fas fa-angle-down logo-menu"></i></a>
         </p>
         <div class="info-missions" id="graph_details" style="display: none;">
-            <p>Détails sur la conception de graphiques pour visualiser les variations des connexions...</p>
+            <p>Le projet consiste à résoudre les problèmes de connexion fréquents au sein de l'entreprise en mettant en place un système 
+				de surveillance des débits entrants et sortants. J’ai travaillé de manière autonome pendant un mois pour développer la 
+				solution actuelle. Après avoir exploré plusieurs approches, j’ai finalement opté pour l'utilisation de Power BI, 
+				une plateforme d'analyse de données, pour créer des graphiques à partir des fichiers CSV mensuels. Ces graphiques 
+				automatisés permettent une analyse plus efficace des débits de connexion, facilitant ainsi l'identification et la 
+				résolution rapide des problèmes. Malgré les défis rencontrés, notamment la compréhension des données, la gestion de 
+				la base de données et l'acquisition de compétences sur Power BI, la mise en place du projet a permis d'améliorer la 
+				performance globale du réseau de l'entreprise.</p>
         </div>
     </div>
-	<h4>Projet à venir </h4>
-	<div id="projetfutur">
-		<p class="info-principale">
-			<i class="fas fa-circle point"></i>
-            Déploiement et gestion de tablettes pour le diagnostic des camions
-            <a onclick="toggleDetails('mdm_details', this)"><i class="fas fa-angle-down logo-menu"></i></a>
-        </p>
-        <div class="info-missions" id="mdm_details" style="display: none;">
-            <p>Détails sur la conception de graphiques pour visualiser les variations des connexions...</p>
-        </div>
-	</div>
 </div>
 
 <script>
@@ -236,92 +244,164 @@
 <!-- ---------------- Mes projets ---------------- -->
 		<div id="projects"> 
 			<h3>Projets.<hr></h3>
-			<p>Projets réalisés en cours et durant mon temps libre.</p>
+			<p>***Projets réalisés en cours et durant mon temps libre.</p>
 			<div class="work-box">
 				<div class="work" id="projects-container"> <!-- Ajoutez un ID pour le conteneur des cards -->
 					<!-- Vos cards existantes -->
 					<div class="card">
-						<a href="#socket" >
-						<img class="work-img" src="img/bataille.jpg">
+						<a href="#cyber" >
+						<img class="work-img" src="img/cyber.jpg">
 						
-							<div class="work-content">SAE Sockets<br> Codée en Python</div>
+							<div class="work-content">SAÉ Cybersécurité </div>
 						</a>
 					</div>
 					<div class="card">
-						<a href="#test2" >
-						<img class="work-img" src="img/bataille.jpg">
+						<a href="#openstack" >
+						<img class="work-img" src="img/openstack.png">
 						
-							<div class="work-content">SAE OpenStack<br> Codée en Python</div>
+							<div class="work-content">SAÉ OpenStack</div>
 						</a>
 					</div>
 					<div class="card">
-						<a href="" target="_blank">
-						<img class="work-img" src="img/bataille.jpg">
+						<a href="#socket">
+						<img class="work-img" src="img/socket.png">
 						
-							<div class="work-content">SAE PowerShell<br> Codée en Python</div>
+							<div class="work-content">SAÉ Sockets</div>
 						</a>
 					</div>
 					<div class="card">
-						<a href="" target="_blank">
-						<img class="work-img" src="img/bataille.jpg">
+						<a href="#powershell">
+						<img class="work-img" src="img/powershell.png">
 						
-							<div class="work-content">SAE Cybersécurité<br> Codée en Python</div>
+							<div class="work-content">SAÉ PowerShell</div>
 						</a>
 					</div>
 					<div class="card hidden">
-						<a href="" target="_blank">
+						<a href="#db">
 						<img class="work-img" src="img/bataille.jpg">
 						
-							<div class="work-content">Projet myMoviesDB<br> Codée en Python</div>
+							<div class="work-content">Projet myMoviesDB</div>
 						</a>
 					</div>
 					<div class="card hidden">
-						<a href="" target="_blank">
+						<a href="#pokedex">
 						<img class="work-img" src="img/bataille.jpg">
 						
-							<div class="work-content">Pokedex<br> Codée en Python</div>
+							<div class="work-content">Pokedex</div>
 						</a>
 					</div>
-					<div class="card hidden">
-						<img class="work-img" src="https://images.unsplash.com/photo-1517842645767-c639042777db?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80">
-						<a href="" target="_blank"> <!--Link to project-->
-						<div class="work-content">Lorem ipsum dolor sit amet consectetur.</div></a>
-					</div> 
-					<div class="card hidden">
-						<img class="work-img" src="https://images.unsplash.com/photo-1535556116002-6281ff3e9f36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=781&q=80">
-						<a href="" target="_blank"> <!--Link to project-->
-						<div class="work-content">Lorem ipsum dolor sit amet consectetur.</div></a>
-					</div>
-					<!-- Ajoutez d'autres cards ici -->
 				</div>
 				<!-- Bouton "Voir plus" -->
 				<button id="voir-plus-btn">Voir plus</button>
 			</div>
 		</div>
 		<div class="info-projet">
-		<section id="socket" style="display:none;">
-			<h3><hr> SAÉ Sockets <hr></h3>
-			<!-- Ajoutez votre contenu de CV ici -->
-			<a href="cv.pdf" download>Télécharger le CV en PDF</a>
-			<button id="close-btn">Fermer</button>
+		<section id="cyber" style="display:none;">
+			<div class="details-projet">
+				<h4><hr> SAÉ Cybersécurité <hr></h4>
+			<p>Cette SAÉ était assez différente des autres, alliant théorie et pratique en cybersécurité. J’ai suivi un cours introductif pour comprendre les divers aspects de ce domaine, allant au-delà des stéréotypes du "piratage" et de la "défense", en mettant en lumière l'importance de la recherche. Une partie de notre tâche consistait à explorer l'Apt 1 et à répondre à des questions qui y étaient associées.
+				<br><br>
+				Par la suite, j’ai dû investiguer un Apt spécifique, le mien étant "Snowglobe". Cette mission impliquait une recherche approfondie sur son origine, ses activités, les outils utilisés, etc.
+				<br><br>
+				J’ai également résolu des CTF (Capture The Flag), un exercice passionnant où je devais repérer des failles dans 4 machines virtuelles pour récupérer le CTF. C’était la première que j’utilisais Kali Linux et c’était une expérience enrichissante pour explorer cet OS et ses outils tels que Metasploit, SQLMap, Burp Suite, etc.
+				
+				Enfin, l’objectif final était de concevoir notre propre CTF. J'ai recréé une faille de sécurité sur Windows et j’ai caché le flag dans une image en exploitant le concept de la stéganographie. Cette faille exploitait une vulnérabilité sur SMB, permettant à un attaquant distant d'exécuter du code sur un système Windows en exploitant une défaillance dans la gestion des requêtes NetBIOS par le service Server de Windows.</p>
+			<button class="close-btn" data-section="cyber">Fermer</button>
+			</div>
+			
 		</section>
+		<section id="openstack" style="display:none;">
+			<div class="details-projet">
+				<h4><hr> SAÉ OpenStack <hr></h4>
+			<p>Notre projet vise à mettre en place une infrastructure cloud privée à l'aide d'OpenStack. 
+				Nous avons choisi OpenStack de manière unanime, car c'est le projet qui nous a le plus attiré. Notre objectif initial consiste à créer un réseau virtuel avec un serveur,
+				puis à établir une communication entre ce serveur et notre machine physique. Cette première étape nous permettra de comprendre et de maîtriser les concepts 
+				fondamentaux d'OpenStack, tout en nous familiarisant avec son fonctionnement. Par la suite, nous prévoyons de déployer un système de stockage de fichiers, 
+				ajoutant ainsi une dimension supplémentaire à notre infrastructure cloud
+				Nous avons également créé une affiche commerciale qui montre pourquoi choisir OpenStack
+				De plus il y a une sorte de forum en anglais et le projet a été présenté de manière simpliste à des personnes qui n’ont pas l’habitude des notions de réseaux</p>
+				<button class="close-btn" data-section="openstack">Fermer</button>
+			</div>
+		</section>
+		<section id="socket" style="display:none;">
+			<div class="details-projet">
+				<h4><hr> SAÉ Sockets <hr></h4>
+			<p>Le but de cette SAE était de développer un jeu de pendu en réseau, appelé PT3N, en utilisant le langage C et les sockets TCP/IP et/ou UDP. 
+				Je devais créer 5 versions du jeu (V0 à V4), chacune avec des fonctionnalités plus évoluées. Pour chaque version, il fallait produire un programme client 
+				et un programme serveur (ou un programme unique pour les deux rôles), ainsi qu'un organigramme des communications et une description de la manière de 
+				lancer le client et le serveur. J'ai également dû fournir un dossier contenant les fichiers de code source. 
+				<br>J'ai réalisé ce projet en groupe et nous avons réussi à terminer la version 3. Ce projet m'a permis de comprendre le fonctionnement des sockets et 
+				de me remémorer l'utilisation du langage C.</p>
+				<button class="close-btn" data-section="socket">Fermer</button>
+			</div>
+		</section>
+		<section id="powershell" style="display:none;">
+			<div class="details-projet">
+				<h4><hr> SAÉ Powershell <hr></h4>
+			<p>L'objectif principal de cette SAÉ était de nous familiariser avec le langage PowerShell. Elle était structurée sous forme de cours pour nous enseigner les bases et les informations essentielles, suivis de TP à rendre, qui reprenaient les éléments abordés pendant les cours.
+				<br><br>
+				À la fin de cette SAE, deux scripts devaient être créés sous forme d'évaluation. L'objectif était que ces scripts respectent le sujet donné et intègrent les bonnes pratiques pour améliorer la qualité du code. Les scripts avaient pour but de créer des comptes Azure Active Directory pour les utilisateurs à partir d'un fichier JSON fourni, tout en respectant les règles de création établies.</p>
+				<button class="close-btn" data-section="powershell">Fermer</button>
+			</div>
+		</section>
+		<section id="db" style="display:none;">
+			<div class="details-projet">
+				<h4><hr> Projet myMoviesDB <hr></h4>
+				<p>
+					Le but de ce projet était de créer une application destinée à répertorier les films présents sur la base de données TMDb
+					en utilisant son API. En plus de cette fonctionnalité principale, l'application proposait des options supplémentaires telles que la possibilité 
+					d'ajouter ou de supprimer des films de la liste. De plus, un système de filtrage était intégré pour faciliter la recherche et la navigation parmi 
+					les films disponibles, améliorant ainsi l'expérience utilisateur.
+
+				</p>
+				<button class="close-btn" data-section="db">Fermer</button>
+			</div>
+		</section>
+		<section id="db" style="display:none;">
+			<div class="details-projet">
+				<h4><hr> Projet myMoviesDB <hr></h4>
+				<p>
+					Le but de ce projet était de créer une application destinée à répertorier les films présents sur la base de données TMDb
+					en utilisant son API. En plus de cette fonctionnalité principale, l'application proposait des options supplémentaires telles que la possibilité 
+					d'ajouter ou de supprimer des films de la liste. De plus, un système de filtrage était intégré pour faciliter la recherche et la navigation parmi 
+					les films disponibles, améliorant ainsi l'expérience utilisateur.
+
+				</p>
+				<button class="close-btn" data-section="db">Fermer</button>
+			</div>
+		</section>
+		
+		<section id="pokedex" style="display:none;">
+			<div class="details-projet">
+				<h4><hr> Pokedex <hr></h4>
+				<p>
+					Ce projet était divisé en deux étapes bien distinctes. Tout d'abord, j'ai reçu une API contenant toutes les données sur les Pokémon du Pokédex, incluant leurs informations respectives. L'objectif initial était de développer une interface graphique à l'aide de Vue.js pour afficher ces données sous la forme d'un Pokédex.
+					<br><br>
+					Une fois cette interface réalisée, la seconde partie du projet consistait à utiliser Node.js pour créer ma propre API. Cette API a été conçue pour fournir les données sur les Pokémon de manière dynamique, en fonction des requêtes des utilisateurs. En combinant ces deux aspects, j'ai pu mettre en place un système complet permettant aux utilisateurs d'interagir avec les données Pokémon via une interface conviviale et une API réactive.
+
+				</p>
+				<button class="close-btn" data-section="pokedex">Fermer</button>
+			</div>
+		</section>
+		
 		</div>
 
-		<section id="test2" style="display:none;">
-			<!-- Ajoutez votre contenu de CV ici -->
-			<a href="cv.pdf" download>Télécharger </a>
-		</section>
 <!-- Bouton pour fermer -->
 <script>
 	document.addEventListener("DOMContentLoaded", function() {
-		// Sélectionne le bouton de fermeture
-		const closeButton = document.getElementById('close-btn');
+		// Sélectionne tous les boutons de fermeture
+		const closeButtons = document.querySelectorAll('.close-btn');
 	
-		// Ajoute un écouteur d'événements au clic sur le bouton de fermeture
-		closeButton.addEventListener('click', function() {
-			// Cache la section correspondante
-			const section = document.getElementById('socket');
-			section.style.display = 'none';
+		// Ajoute un écouteur d'événements à chaque bouton de fermeture
+		closeButtons.forEach(function(button) {
+			button.addEventListener('click', function() {
+				// Récupère l'ID de la section correspondante à partir de l'attribut de données
+				const sectionId = this.getAttribute('data-section');
+				const section = document.getElementById(sectionId);
+	
+				// Cache la section correspondante
+				section.style.display = 'none';
+			});
 		});
 	});
 	
@@ -386,17 +466,52 @@
 </script>
 
 <!-- ---------------- Mes compétences ---------------- -->
-    <div id="competences">
-		<h3>Compétences.<hr></h3>
-		<div id="bars-container">
-			<div class="progress-bar blue"></div>
-			<div class="progress-bar orange alt"></div>
-			<div class="progress-bar green"></div>
-			<div class="progress-bar pink alt"></div>
-			<div class="clear"></div>
+<div id="competences" class="skills-container">
+	<h3>Mes compétences</h3>
+	<div class="skills-row">
+	  <div class="skill-column">
+		<h3>Savoir-être</h3>
+		<div class="skill-item">
+		  <i class="fas fa-users"></i>
+		  <h4>Travail en équipe</h4>
+		  <p>Capacité à collaborer efficacement avec les autres.</p>
 		</div>
-
+		<div class="skill-item">
+		  <i class="fas fa-bullhorn"></i>
+		  <h4>Communication</h4>
+		  <p>Excellentes compétences en communication écrite et verbale.</p>
+		</div>
+		<div class="skill-item">
+			<i class="fas fa-user-check"></i> <!-- Icône correspondante à l'autonomie -->
+			<h4>Autonomie</h4>
+			<p>Capacité à travailler de manière indépendante et à prendre des initiatives.</p>
+		</div>
+	  </div>
+	  <div class="skill-column">
+		<h3>Savoir-faire</h3>
+		<div class="skill-column">
+		  <div class="skill-item">
+			<i class="fas fa-code"></i>
+			<h4>Développement web</h4>
+			<p>Maîtrise de HTML, CSS, JavaScript et des frameworks tels que React et Angular.</p>
+		  </div>
+		  <div class="skill-item">
+			<i class="fas fa-cogs"></i>
+			<h4>Gestion de projet</h4>
+			<p>Expérience dans la gestion de projets informatiques et la coordination d'équipes.</p>
+		  </div>
+		  <div class="skill-item">
+			<i class="fas fa-pencil-alt"></i>
+			<h4>Conception de bases de données</h4>
+			<p>Expérience dans la conception et la gestion de bases de données relationnelles.</p>
+		  </div>
+		</div>
 	</div>
+  </div>
+  
+	  
+	  
+	  
 
 	<!-- ---------------- Mes centres d'intérêt ---------------- -->
 	<div id="centreint"> 
@@ -458,9 +573,28 @@
      </div>
 		 
 		<!--──────────────Contact────────────────-->
-	  <div id="contact">
+
+
 		  <!--────social media links─────-->
 		   <h3>Contact.<hr></h3>
+		   <div class="contact-form">
+			<h2>Contactez-moi</h2>
+			<form action="#" method="post">
+			  <div class="form-group">
+				<label for="name">Nom</label>
+				<input type="text" id="name" name="name" required>
+			  </div>
+			  <div class="form-group">
+				<label for="email">Email</label>
+				<input type="email" id="email" name="email" required>
+			  </div>
+			  <div class="form-group">
+				<label for="message">Message</label>
+				<textarea id="message" name="message" rows="5" required></textarea>
+			  </div>
+			  <button type="submit">Envoyer</button>
+			</form>
+		  </div>
 		   <p>N'hésitez pas à me contacter directement sur mes réseaux sociaux!</p>
 		    <div class="social-media">
                 <a href="#" target="_blank"><i class='fab fa-instagram'></i></a>

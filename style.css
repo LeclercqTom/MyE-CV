@@ -177,27 +177,55 @@ h4{
 }
 
 /* Ma formation */
-#formation{
-	/* margin-top:100px; */
-    height: 100%;
+#formation {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-    justify-content: center;
-	text-align:center;
+	justify-content: center;
+	text-align: center;
 	color: var(--main-fonts-color);
-	/* background-color: magenta; */
-}
-
-#formation h3{
-    padding-top: 70px;
-}
-#formation p{
 	font-family: var(--main-font-family);
-	font-size:1.2rem;
-	padding: 10px;
-}
-
+	padding-top: 70px;
+  }
+  
+  
+  .formation-item {
+	display: flex;
+	align-items: center;
+	justify-content: left;
+	margin-bottom: 50px;
+	flex-direction: row;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+	padding: 30px;
+	border-radius: 10px;
+	width: 1000px;
+	/* width: 80%; */
+  }
+  
+  .formation-item img {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	margin-right: 30px;
+  }
+  
+  .formation-content {
+	text-align: left;
+  }
+  
+  .formation-content h4 {
+	font-size: 1.5rem;
+	margin-bottom: 10px;
+	color: var(--main-fonts-color);
+  }
+  
+  .formation-content p {
+	font-size: 1.2rem;
+	margin-bottom: 5px;
+	color: var(--main-fonts-color);
+  }
+  
+  
 /* ---------------- Mon expérience professionnelle ---------------- */
 #expepro{
 	/* margin-top:100px; */
@@ -245,7 +273,6 @@ h4{
 }
 
 .info-missions{
-	/* background-color: yellow; */
 	border: 6px solid var(--main-decor-color);
 	border-radius: 10px;
 	padding: 10px;
@@ -276,6 +303,7 @@ h4{
     justify-content: center;
 	text-align:center;
 	color: var(--main-fonts-color);
+	/* padding-bottom: 70px; */
 }
 #projects h3{
     padding-top: 70px;
@@ -293,7 +321,7 @@ h4{
     justify-content:center;
 	align-items: center;
 	padding: 20px;
-	/* width: 1000px; */
+	width: 1000px;
 }
 
 .card{
@@ -306,11 +334,12 @@ h4{
     background:var(--main-decor-color);
 }
 
-.card img{
-	width: 100%;
-	height:70%;
-	border-radius:10px 10px 0px 0px;
+.work-img {
+  width: 200px; /* Remplacez cette valeur par la largeur souhaitée */
+  height: 200px; /* Remplacez cette valeur par la hauteur souhaitée */
+  object-fit: cover; /* Conserve les proportions de l'image et remplit l'espace défini */
 }
+
 
 .hidden {
 	display: none;
@@ -338,13 +367,49 @@ h4{
 }
 
 .info-projet {
-    display: flex;
+	display: flex;
     align-items: center;
-	
-    max-width: 1000px; /* Réduit la largeur de la div */
+    justify-content: space-between; /* Pour centrer le bouton */
+    max-width: 1000px;
     margin: 0 auto 20px;
-    background-color: yellow;
+	
   }
+
+.details-projet{
+	border: 6px solid var(--main-decor-color);
+	border-radius: 10px;
+	padding: 10px;
+	margin-top: 75px;
+	
+	
+}
+.details-projet h4 {
+	text-align: center;
+	padding-top: 35px;
+}
+
+.details-projet p{
+	color: var(--main-fonts-color);
+    font-family: var(--main-font-family);
+    font-size: 1rem;
+    padding: 10px;
+    text-align: justify;
+    margin-right: 10px; /* Ajout de marge à droite pour séparer le texte du bouton */
+}
+.details-projet button {
+    padding: 10px 20px; /* Ajustement de la taille du bouton */
+    background-color: var(--main-btn-color); /* Couleur de fond du bouton */
+    color: white; /* Couleur du texte */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Animation de transition */
+}
+
+.info-projet button:hover {
+    background-color: var(--main-btn-hover-color); /* Couleur de fond du bouton au survol */
+}
+
 
 /* Centres d'intérêt */
 
@@ -541,6 +606,7 @@ hr {
     Compétences
 ──────────────────*/
 #competences{
+	padding-top: 70px;
 	margin-top:100px;
     height: 100%;
 	display: flex;
@@ -549,92 +615,115 @@ hr {
     justify-content: center;
 	text-align:center;
 	color: var(--main-fonts-color);
-}
-/* progress bar base */
-
-.progress-bar { 
-  width: 300px;
-  height: 24px;
-  padding: 4px;
-  background-color: #191919;
-  border-radius: 16px;
-  -webkit-border-radius: 16px;
-  -moz-border-radius: 16px;
-  box-shadow: inset 0 1px 2px #000,
-    0 1px 0 #2b2b2b;
-  -webkit-box-shadow: inset 0 1px 2px #000,
-    0 1px 0 #2b2b2b;
-  -moz-box-shadow: inset 0 1px 2px #000,
-    0 1px 0 #2b2b2b;
+	font-family: var(--main-font-family);
 }
 
-/* code for the inner (colorful) part of the bar */
-.progress-bar:before { 
-  content: '';
-  display: block;
-  position: absolute;
-  width: 200px;
-  height: 24px;
-  background: #999;
-  border-radius: 12px;
-  -webkit-border-radius: 12px;
-  -moz-border-radius: 12px;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), 
-   inset 0 -1px 3px rgba(0, 0, 0, 0.4), 
-   0 1px 1px #000;
-  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3),
-    inset 0 -1px 3px rgba(0, 0, 0, 0.4),
-    0 1px 1px #000;
-  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3),
-    inset 0 -1px 3px rgba(0, 0, 0, 0.4),
-    0 1px 1px #000;
-}
 
-/* code to stripe the bars */
-.progress-bar:after { 
-  content: '|||||||||||||';
-  display: block;
-  position: absolute;
-  width: 200px;
-  height: 24px;
-  overflow: hidden;
-  border-radius: 12px;
-  -webkit-border-radius: 12px;
-  -moz-border-radius: 12px;
-  transform: skewX(-30deg);
-  -webkit-transform: skewX(-30deg);
-  -moz-transform: skewX(-30deg);
-  -o-transform: skewX(-30deg);
-  font:bold 120px/80px sans-serif;
-  letter-spacing: -6px;
-  color: #000;
-  opacity: 0.06;
-}
+.skills-container {
+	max-width: 1000px;
+	margin: 0 auto;
+	text-align: center;
+  }
+  
+  .skills-row {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin: 20px 0;
+  }
+  
+  .skill-column {
+	flex-basis: 45%;
+	margin: 10px;
+	
+  }
+  
+  .skill-column h3 {
+	font-size: 24px;
+	margin-bottom: 20px;
+  }
+  
+  .skill-item {
+	margin-bottom: 20px;
+	text-align: left;
+  }
+  
+  .skill-item i {
+	font-size: 48px;
+	margin-bottom: 10px;
+	color: #333;
+  }
+  
+  .skill-item h4 {
+	font-size: 20px;
+	margin-bottom: 10px;
+  }
+  
+  .skill-item p {
+	font-size: 16px;
+	line-height: 1.5;
+  }
 
-/* code for the colors */
-.blue:before { 
-  background: #099;
-  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#099), to(#006A6B));
-  background: -moz-linear-gradient(top, #099, #006A6B);
-}
+/* contact */
+.contact-form {
+	max-width: 600px;
+	margin: 50px auto;
+	background-color: #fff;
+	padding: 40px;
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+	text-align: center;
+  }
+  
+  .contact-form h2 {
+	font-size: 36px;
+	margin-bottom: 40px;
+	color: #333;
+  }
+  
+  .form-group {
+	margin-bottom: 20px;
+  }
+  
+  .form-group label {
+	display: block;
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 10px;
+	color: #333;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+	width: 100%;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	font-size: 16px;
+	color: #333;
+  }
+  
+  .form-group input:focus,
+  .form-group textarea:focus {
+	outline: none;
+	border-color: #333;
+  }
+  
+  button {
+	background-color: #333;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	padding: 10px 20px;
+	font-size: 16px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+	background-color: #555;
+  }
+  
 
-.pink:before { 
-  background: #f09;
-  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f36), to(#AC2246));
-  background: -moz-linear-gradient(top, #f36, #AC2246);
-}
-
-.green:before { 
-  background: #7EBD01;
-  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#7EBD01), to(#568201));
-  background: -moz-linear-gradient(top, #7EBD01, #568201);
-}
-
-.orange:before { 
-  background: #f90;
-  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f90), to(#f60));
-  background: -moz-linear-gradient(top, #f90, #f60);
-}
 /*────────────────── 
     media queries
 ──────────────────*/
@@ -719,6 +808,17 @@ hr {
 	#projetfutur{
 		width: 90%;
 	}
+	.work{
+		width: 90%;
+	}
+	.formation-item {
+		flex-direction: column;
+		width: 300px;
+	  }
+	  .formation-item img {
+		margin-right: 0;
+		margin-bottom: 30px;
+	  }
 	
   }
   
@@ -731,6 +831,18 @@ hr {
 	.info-principale {
 	  font-size: 1.1rem; /* Taille de police légèrement plus grande pour les informations principales */
 	}
+	.work{
+		width: 50%;
+	}
+
+	.formation-item {
+		flex-direction: column;
+		width: 300px;
+	  }
+	  .formation-item img {
+		margin-right: 0;
+		margin-bottom: 30px;
+	  }
   }
   
   /* Media queries pour les écrans de grande taille (ordinateurs de bureau) */
